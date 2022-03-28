@@ -102,11 +102,11 @@ relative to a baseline.
 
 我們共使用兩次 prophet 模型兩次，分別為  
 1. 尖峰供電 peak supply  
-![](https://i.imgur.com/TFQhb5q.png)
+![](https://i.imgur.com/TFQhb5q.png)  
 `RMSE = 595.9370547869777`  
   
 2. 備轉容量率 operation reserve ratio  
-![](https://i.imgur.com/AbczJxY.png)
+![](https://i.imgur.com/AbczJxY.png)  
 `RMSE = 1.761063198150491`  
 
 
@@ -116,7 +116,7 @@ relative to a baseline.
 
 可以得知，我們的預測結果應為兩者的預測**乘積**  
 
-![](https://i.imgur.com/nyihzqe.png)
+![](https://i.imgur.com/nyihzqe.png)  
 `RMSE = 523.339138543489`  
 
 ## 結論
