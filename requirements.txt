@@ -16,7 +16,7 @@ hijri-converter==2.2.3
 holidays==0.13
 importlib-metadata==4.11.3
 ipykernel==5.3.4
-ipython==7.18.1
+ipython==7.31.1
 ipython_genutils==0.2.0
 jedi==0.18.1
 joblib==0.17.0
