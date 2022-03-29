@@ -47,13 +47,13 @@ plotly==5.6.0
 prompt-toolkit==3.0.8
 prophet==1.0.1
 pycodestyle==2.7.0
-Pygments==2.7.1
+Pygments==2.7.4
 PyMeeus==0.5.10
 pyparsing==3.0.4
 pystan==2.19.1.1
 python-dateutil==2.8.2
 pytz==2021.3
-pywin32==227
+pywin32==301
 pyzmq==19.0.2
 scikit-learn==0.23.2
 scipy==1.7.3
