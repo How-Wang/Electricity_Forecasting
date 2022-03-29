@@ -38,7 +38,7 @@ Pearson's r、Maximal information Coefficient、Distance Correlation、Spearman'
 ![](https://i.imgur.com/jA05jJC.png)
 
 ### 季節性判斷
-如果再進一步判斷 **季節性 seasonality** 與 **備轉容量率 percent operating reserve**，就能進一步確認上續推斷，除了 month 之外，其他的 feature 並沒有與 percent operating reserve 有什麼相關性，也包含我們可能認為會有相關的 holiday
+如果再進一步判斷 **季節性 seasonality** 與 **備轉容量率 percent operating reserve**，就能進一步確認上續推斷，除了 month 之外，其他的 features 並沒有與 percent operating reserve 有什麼相關性，也包含我們可能認為會有相關的 holiday
 
 - 與 percent operating reserve 相比
     - day
@@ -57,7 +57,7 @@ Pearson's r、Maximal information Coefficient、Distance Correlation、Spearman'
 ![](https://i.imgur.com/ckSmI21.png)
 
 ## 資料前處理
-在 training 資料內，我們使用2017年至2022年的一維資料，包含 **尖峰負載 peak supply**、**備轉容量率 operating reserve rate**
+在 training 資料內，我們使用2017年至2022年的一維資料，包含 **尖峰負載 peak supply**、**備轉容量率 operating reserve ratio**
 ## 使用模型
 ### 1. XGBoost
 >XGBoost is an optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the Gradient Boosting framework.
@@ -113,9 +113,6 @@ relative to a baseline.
 ![](https://i.imgur.com/AbczJxY.png)  
 `RMSE = 1.761063198150491`  
 
-2. 備轉容量率 percent operating reserve
-![](https://i.imgur.com/AbczJxY.png)
-`RMSE = 1.761063198150491`
 
 ## 初步測試結果
 根據
