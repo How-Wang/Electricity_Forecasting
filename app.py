@@ -36,7 +36,7 @@ if __name__ == '__main__':
     df_forecast_step_1 = df_forecast_step_1[['ds', 'yhat']]
     df_forecast_step_1.columns = ['date', 'peak_supply']
 
-    prophet_data = df_training[:-n_predictions].rename(columns={'date': 'ds', 'op_reserve_ratio': 'y'})
+    prophet_data = df_training[:-n_predictions].rename(columns={'date': 'ds', 'prcnt_op_reserve': 'y'})
     model_step_2 = Prophet(daily_seasonality=False, 
                             yearly_seasonality=True, 
                             weekly_seasonality=False, 
@@ -51,12 +51,12 @@ if __name__ == '__main__':
     df_future['peak_supply'] = df_forecast_step_1['peak_supply'].values
     df_forecast_step_2 = model_step_2.predict(df_future)
     df_forecast_step_2 = df_forecast_step_2[['ds', 'yhat']]
-    df_forecast_step_2.columns = ['date', 'op_reserve_ratio']
+    df_forecast_step_2.columns = ['date', 'prcnt_op_reserve']
 
     df_result = df_forecast_step_1.merge(df_forecast_step_2)
     op_reserve = [float] * len(df_result['peak_supply'])
     for i, item in enumerate (op_reserve):
-        op_reserve[i] = df_result.loc[:,('peak_supply')][i] * df_result.loc[:,('op_reserve_ratio')][i] / 100
+        op_reserve[i] = df_result.loc[:,('peak_supply')][i] * df_result.loc[:,('prcnt_op_reserve')][i] / 100
     df_result['op_reserve'] = op_reserve
 
     df_result = df_result.loc[:, ['date', 'op_reserve']]
