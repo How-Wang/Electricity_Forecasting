@@ -16,9 +16,9 @@ if __name__ == '__main__':
     # You can modify it at will.
     import pandas as pd
     from prophet import Prophet
-    n_predictions= 18
-    
-    df_training = pd.read_csv(args.input)
+    n_predictions= 16
+    print(args)
+    df_training = pd.read_csv(args.training) 
     df_training = pd.DataFrame(df_training)
     df_training['date']= pd.to_datetime(df_training['date'])
 
