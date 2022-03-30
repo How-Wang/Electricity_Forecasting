@@ -23,7 +23,7 @@ Given a time series electricity data to predict the value of the operating reser
 1. 尖峰負載 peak supply
 2. 備轉容量率 percent operating reserve
 
-在利用兩者相乘得出我們所求的 備轉容量率 percent operating reserve
+再利用兩者相乘得出我們所求的 備轉容量率 percent operating reserve
 
 ### 相關係數
 根據下方常見的5種相關係數 分別為
