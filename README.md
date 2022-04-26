@@ -93,10 +93,7 @@ Arima 的特色與限制就是只能帶入一維的 time series 變數，沒辦�
 
 ### 3. FB-prophet
 我們在經過測試之後，決定使用 facebook 所提供的模型 [prophet](https://github.com/facebook/prophet)  
->Forecasting is a data science task that is central to many activities within an organization.
-For instance, organizations across all sectors of industry must engage in capacity planning
-to efficiently allocate scarce resources and goal setting in order to measure performance
-relative to a baseline. 
+>Forecasting is a common data science task that helps organizations with capacity planning, goal setting, and anomaly detection. Despite its importance, there are serious challenges associated with producing reliable and high quality forecasts — especially when there are a variety of time series and analysts with expertise in time series modeling are relatively rare. To address these challenges, we describe a practical approach to forecasting “at scale” that combines configurable models with analyst-in-the-loop performance analysis. We propose a modular regression model with interpretable parameters that can be intuitively adjusted by analysts with domain knowledge about the time series. We describe performance analyses to compare and evaluate forecasting procedures, and automatically flag forecasts for manual review and adjustment. Tools that help analysts to use their expertise most effectively enable reliable, practical forecasting of business time series. 
 詳細內容可以再參照 [(Sean J. Taylor&Benjamin Letham,2017)](https://peerj.com/preprints/3190/#)
 
 此模型依舊為 Time series 模型，但與 ARIMA 不同的是，我們可以在此模型上，多加上其他 features 的 time series data 當 regressor。
