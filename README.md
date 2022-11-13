@@ -74,7 +74,7 @@ Pearson's r、Maximal information Coefficient、Distance Correlation、Spearman'
 我們發現當feature 選擇`備轉量`時，會有最好的效果  
 3. 下一步，我們開始測試天數的效果，以下為效果呈現  
 ![](https://i.imgur.com/Tv5ZWvP.png)
-根據上圖，發現 rmse 的範圍會落在 436.64~1059，range 想當大  
+根據上圖，發現 rmse 的範圍會落在 436.64~1059，range 相當大  
 且平均與中位數大約都落於 650 左右，風險不小  
 下方為預測效果最好的天數與 features 組合 XGBoost  
 天數 : 64   
