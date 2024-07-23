@@ -57,7 +57,7 @@ pywin32==301
 pyzmq==19.0.2
 scikit-learn==0.23.2
 scipy==1.7.3
-setuptools==58.0.4
+setuptools==70.0.0
 six==1.16.0
 statsmodels==0.12.0
 tenacity==8.0.1
